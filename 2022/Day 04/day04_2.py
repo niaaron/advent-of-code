@@ -7,6 +7,7 @@ for pairs in contents:
     pair_one = list(map(int, pairs.split(",")[0].split("-")))
     pair_two = list(map(int, pairs.split(",")[1].split("-")))
 
+    # skips if the smallest value of a pair is larger than the largest value of the other pair
     if pair_one[0] > pair_two[1] or pair_two[0] > pair_one[1]:
         continue
 
